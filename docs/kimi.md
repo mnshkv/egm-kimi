@@ -25,7 +25,7 @@ Kimi's `Agent` tool starts a subagent in a fresh context. That fresh context is
 the whole point of the model: reviewers must not see the main conversation.
 
 1. Read the persona file under `agents/` and its frontmatter `name`
-   (`egm-zoom-out`, `egm-comprehension`, `egm-design-critic`, ...).
+   (`egm-zoom-out`, `egm-comprehension`, `egm-design`, ...).
 2. Call `Agent` with that name as `subagent_type` and the constructed prompt.
 3. If Kimi rejects the named type, call `Agent` with
    `subagent_type: "explore"` and put `Read <plugin root>/agents/<file>.md

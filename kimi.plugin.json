@@ -1,6 +1,6 @@
 {
   "name": "egm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Elephant-Goldfish Model: develop ideas with full context and review documents with fresh eyes. Kimi port of google/elephant-goldfish-model.",
   "author": {
     "name": "Google (upstream), Kimi port"
@@ -17,7 +17,7 @@
   "skills": "./skills/",
   "agents": "./agents/",
   "commands": "./commands/",
-  "skillInstructions": "Kimi Code mapping for EGM skills:\n\n- Subagents: use Kimi's `Agent` tool. Reviewer personas live in the plugin's `agents/` directory; their frontmatter `name` (egm-zoom-out, egm-design-critic, ...) is the `subagent_type` to request. If that type is rejected, use `subagent_type: \"explore\"` and tell the subagent to read the persona file first.\n- Fresh context is the point: never review a document in the main session.\n- Structured gates: use `AskUserQuestion`.\n- Task tracking: use `TodoList`.\n- Artifacts: write briefs, drafts and reports with `Write`; do not paste long documents into chat.\n- Entry points: /egm:brainstorm, /egm:draft, /egm:review, /egm:review-loop, /egm:resolve, /egm:lite, /egm:bootstrap, /egm:drift-report.",
+  "skillInstructions": "Kimi Code mapping for EGM skills:\n\n- Subagents: use Kimi's `Agent` tool. Reviewer personas live in the plugin's `agents/` directory; their frontmatter `name` (egm-zoom-out, egm-design, ...) is the `subagent_type` to request. If that type is rejected, use `subagent_type: \"explore\"` and tell the subagent to read the persona file first.\n- Fresh context is the point: never review a document in the main session.\n- Structured gates: use `AskUserQuestion`.\n- Task tracking: use `TodoList`.\n- Artifacts: write briefs, drafts and reports with `Write`; do not paste long documents into chat.\n- Entry points: /egm:brainstorm, /egm:draft, /egm:review, /egm:review-loop, /egm:resolve, /egm:lite, /egm:bootstrap, /egm:drift-report.",
   "interface": {
     "displayName": "Elephant-Goldfish Model",
     "shortDescription": "Design with an elephant, review with a goldfish",
