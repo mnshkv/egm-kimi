@@ -1,5 +1,7 @@
 # Elephant-Goldfish Model for Kimi Code CLI
 
+[![validate](https://github.com/mnshkv/egm-kimi/actions/workflows/validate.yml/badge.svg)](https://github.com/mnshkv/egm-kimi/actions/workflows/validate.yml)
+
 Design with an elephant, review with a goldfish.
 
 This is a Kimi Code CLI port of [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model).
@@ -63,3 +65,9 @@ Goldfish review, and the skills stop instead of pretending.
 Apache-2.0, inherited from upstream. See `LICENSE` and `NOTICE`. Not an
 officially supported Google product, and this port is not maintained by the
 upstream authors.
+
+## Checks
+
+`node scripts/validate.mjs` validates the manifest, every `SKILL.md` frontmatter,
+personas, command files and referenced assets. CI runs it on every push and pull
+request.
