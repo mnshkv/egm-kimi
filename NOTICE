@@ -1,0 +1,15 @@
+Elephant-Goldfish Model (EGM) — Kimi Code CLI port
+==================================================
+
+This package is derived from google/elephant-goldfish-model
+(https://github.com/google/elephant-goldfish-model), version 0.1.1,
+licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Modifications for Kimi Code CLI:
+- plugin manifest kimi.plugin.json, slash commands in commands/
+- subagent dispatch rewritten for Kimi's Agent tool and read-only explore type
+- harness integration notes in docs/kimi.md instead of per-harness docs
+- test scenarios, site and packaging files from upstream are not included
+
+Not an officially supported Google product. Upstream authors are not
+responsible for this port.
